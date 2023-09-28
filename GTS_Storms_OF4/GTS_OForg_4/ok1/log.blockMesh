@@ -1,0 +1,75 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.x
+Exec   : blockMesh
+Date   : Jun 08 2023
+Time   : 16:26:07
+Host   : "cluster62"
+PID    : 107237
+Case   : /share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/system/blockMeshDict"
+Creating curved edges
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.0752231 .. 0.0752231
+        j : 0.0725714 .. 0.0725714
+        k : 0.07112 .. 0.07112
+
+
+There are no merge patch pairs edges
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-7.33423 -1.524 -0.0762) (4.40057 1.524 2.0574)
+  nPoints: 209281
+  nCells: 196560
+  nFaces: 602172
+  nInternalFaces: 577188
+----------------
+Patches
+----------------
+  patch 0 (start: 577188 size: 1260) name: inlet
+  patch 1 (start: 578448 size: 1260) name: outlet
+  patch 2 (start: 579708 size: 4680) name: left
+  patch 3 (start: 584388 size: 4680) name: right
+  patch 4 (start: 589068 size: 6552) name: floor
+  patch 5 (start: 595620 size: 6552) name: top
+
+End
+

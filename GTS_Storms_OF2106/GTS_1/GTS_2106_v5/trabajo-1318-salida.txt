@@ -1,0 +1,2 @@
+Running snappyHexMesh (32 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106_v5 
+Running snappyHexMesh (32 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106_v5 

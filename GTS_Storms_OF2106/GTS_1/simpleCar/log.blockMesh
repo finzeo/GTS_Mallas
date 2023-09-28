@@ -1,0 +1,161 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2106                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _c15bfde3cb-20210624 OPENFOAM=2106
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Jul 28 2023
+Time   : 16:17:01
+Host   : pirayu
+PID    : 418620
+I/O    : uncollated
+Case   : /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/simpleCar
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+--> FOAM Warning : 
+    From Foam::polyMesh::polyMesh(const Foam::IOobject&, Foam::pointField&&, const cellShapeList&, const faceListList&, const wordList&, const Foam::PtrList<Foam::dictionary>&, const Foam::word&, const Foam::word&, bool)
+    in file meshes/polyMesh/polyMeshFromShapeMesh.C at line 920
+    Found 34 undefined faces in mesh; adding to default patch frontAndBack
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 18
+		Number of boundary faces : 66
+		Number of defined boundary faces : 66
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list (topological search)...
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.0375 .. 0.0375
+        j : 0.0525 .. 0.0525
+        k : 0.1 .. 0.1
+
+    Block 1 cell size :
+        i : 0.0375 .. 0.0375
+        j : 0.04 .. 0.04
+        k : 0.1 .. 0.1
+
+    Block 2 cell size :
+        i : 0.0375 .. 0.0375
+        j : 0.05 .. 0.05
+        k : 0.1 .. 0.1
+
+    Block 3 cell size :
+        i : 0.0375 .. 0.0375
+        j : 0.05 .. 0.05
+        k : 0.1 .. 0.1
+
+    Block 4 cell size :
+        i : 0.0375 .. 0.0375
+        j : 0.05 .. 0.05
+        k : 0.1 .. 0.1
+
+    Block 5 cell size :
+        i : 0.052348 .. 0.052348
+        j : 0.05 .. 0.05
+        k : 0.1 .. 0.1
+
+    Block 6 cell size :
+        i : 0.0515388 .. 0.0515388
+        j : 0.05 .. 0.05
+        k : 0.1 .. 0.1
+
+    Block 7 cell size :
+        i : 0.0375832 .. 0.0375832
+        j : 0.0390512 .. 0.0390512
+        k : 0.1 .. 0.1
+
+    Block 8 cell size :
+        i : 0.0395285 .. 0.0395285
+        j : 0.032 .. 0.032
+        k : 0.1 .. 0.1
+
+    Block 9 cell size :
+        i : 0.0538516 .. 0.0538516
+        j : 0.0390512 .. 0.0390512
+        k : 0.1 .. 0.1
+
+    Block 10 cell size :
+        i : 0.0571183 .. 0.0571183
+        j : 0.0452769 .. 0.0452769
+        k : 0.1 .. 0.1
+
+    Block 11 cell size :
+        i : 0.0525 .. 0.0525
+        j : 0.0525 .. 0.0525
+        k : 0.1 .. 0.1
+
+    Block 12 cell size :
+        i : 0.0333333 .. 0.0333333
+        j : 0.05 .. 0.05
+        k : 0.1 .. 0.1
+
+    Block 13 cell size :
+        i : 0.04 .. 0.04
+        j : 0.05 .. 0.05
+        k : 0.1 .. 0.1
+
+    Block 14 cell size :
+        i : 0.0333333 .. 0.0333333
+        j : 0.0525 .. 0.0525
+        k : 0.1 .. 0.1
+
+    Block 15 cell size :
+        i : 0.04 .. 0.04
+        j : 0.04 .. 0.04
+        k : 0.1 .. 0.1
+
+    Block 16 cell size :
+        i : 0.0447214 .. 0.0447214
+        j : 0.0141421 .. 0.0141421
+        k : 0.1 .. 0.1
+
+
+There are no merge patch pairs
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (10 3 0.1)
+  nPoints: 26626
+  nCells: 12940
+  nFaces: 52134
+  nInternalFaces: 25506
+----------------
+Patches
+----------------
+  patch 0 (start: 25506 size: 64) name: inlet
+  patch 1 (start: 25570 size: 63) name: outlet
+  patch 2 (start: 25633 size: 225) name: upperWall
+  patch 3 (start: 25858 size: 200) name: lowerWall
+  patch 4 (start: 26058 size: 196) name: body
+  patch 5 (start: 26254 size: 25880) name: frontAndBack
+
+End
+

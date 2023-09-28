@@ -1,0 +1,44 @@
+solid GTS-Storms-v12-floor1
+   facet normal 0.000000e+00 -0.000000e+00 1.000000e+00
+      outer loop
+         vertex 4.400569e+00 6.858000e-01 -7.620000e-02
+         vertex 4.400569e+00 1.066800e+00 -7.620000e-02
+         vertex -3.676631e+00 6.858000e-01 -7.620000e-02
+      endloop
+   endfacet
+   facet normal 0.000000e+00 -0.000000e+00 1.000000e+00
+      outer loop
+         vertex -3.676631e+00 6.858000e-01 -7.620000e-02
+         vertex 4.400569e+00 1.066800e+00 -7.620000e-02
+         vertex -4.362431e+00 1.066800e+00 -7.620000e-02
+      endloop
+   endfacet
+   facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+      outer loop
+         vertex -3.676631e+00 6.858000e-01 -7.620000e-02
+         vertex -4.362431e+00 1.066800e+00 -7.620000e-02
+         vertex -3.676631e+00 -6.858000e-01 -7.620000e-02
+      endloop
+   endfacet
+   facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+      outer loop
+         vertex -3.676631e+00 -6.858000e-01 -7.620000e-02
+         vertex -4.362431e+00 1.066800e+00 -7.620000e-02
+         vertex -4.362431e+00 -1.066800e+00 -7.620000e-02
+      endloop
+   endfacet
+   facet normal -0.000000e+00 0.000000e+00 1.000000e+00
+      outer loop
+         vertex -3.676631e+00 -6.858000e-01 -7.620000e-02
+         vertex -4.362431e+00 -1.066800e+00 -7.620000e-02
+         vertex 4.400569e+00 -6.858000e-01 -7.620000e-02
+      endloop
+   endfacet
+   facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+      outer loop
+         vertex 4.400569e+00 -6.858000e-01 -7.620000e-02
+         vertex -4.362431e+00 -1.066800e+00 -7.620000e-02
+         vertex 4.400569e+00 -1.066800e+00 -7.620000e-02
+      endloop
+   endfacet
+endsolid

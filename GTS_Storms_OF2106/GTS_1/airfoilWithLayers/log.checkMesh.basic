@@ -1,0 +1,376 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2106                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _c15bfde3cb-20210624 OPENFOAM=2106
+Arch   : "LSB;label=32;scalar=64"
+Exec   : checkMesh -writeAllFields
+Date   : Jul 31 2023
+Time   : 11:27:52
+Host   : pirayu
+PID    : 2378763
+I/O    : uncollated
+Case   : /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/airfoilWithLayers
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Writing mesh quality as fields 
+15
+(
+faceZone
+cellDeterminant
+nonOrthoAngle
+cellVolumeRatio
+skewness
+minTetVolume
+faceWeight
+aspectRatio
+cellRegion
+cellAspectRatio
+minPyrVolume
+wallDistance
+cellVolume
+cellZone
+cellShapes
+)
+
+
+Time = 0
+
+Mesh stats
+    points:           1056
+    faces:            2525
+    internal faces:   1975
+    cells:            750
+    faces per cell:   6
+    boundary patches: 1
+    point zones:      0
+    face zones:       0
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     750
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     0
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+    Patch               Faces    Points   Surface topology                  
+    airFlow             550      552      ok (closed singly connected)      
+
+Checking faceZone topology for multiply connected surfaces...
+    No faceZones found.
+
+Checking basic cellZone addressing...
+    No cellZones found.
+
+Checking geometry...
+    Overall domain bounding box (-1 -1 -1) (2 0 1)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (-1.57702134179711e-18 2.54215840297695e-17 1.19853621976581e-17) OK.
+    Max cell openness = 2.60208521396521e-16 OK.
+    Max aspect ratio = 1 OK.
+    Minimum face area = 0.0399999999999999. Maximum face area = 0.0400000000000001.  Face area magnitudes OK.
+    Min volume = 0.00799999999999998. Max volume = 0.00800000000000003.  Total volume = 6.  Cell volumes OK.
+    Mesh non-orthogonality Max: 0 average: 0
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 6.01370805005294e-15 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+Writing fields with mesh quality parameters
+    Writing non-orthogonality (angle) to nonOrthoAngle
+    Writing face interpolation weights (0..0.5) to faceWeight
+    Writing face skewness to skewness
+    Writing cell determinant to cellDeterminant
+    Writing aspect ratio to aspectRatio
+    Writing approximate aspect ratio to cellAspectRatio
+    Writing cell shape (hex, tet etc.) to cellShapes
+    Writing cell volume to cellVolume
+    Writing cell volume ratio to cellVolumeRatio
+    Writing minTetVolume to minTetVolume
+    Writing minPyrVolume to minPyrVolume
+    Writing cell region to cellRegion
+    Writing cell zoning to cellZone
+    Writing face zoning to faceZone
+
+--> FOAM Warning : 
+    From virtual Foam::polyMesh::readUpdateState Foam::polyMesh::readUpdate()
+    in file meshes/polyMesh/polyMeshIO.C at line 210
+    Number of patches has changed.  This may have unexpected consequences.  Proceed with care.
+Time = 1
+
+Mesh stats
+    points:           9338
+    faces:            23894
+    internal faces:   21736
+    cells:            7320
+    faces per cell:   6.23360655737705
+    boundary patches: 4
+    point zones:      0
+    face zones:       1
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     6690
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     630
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            6   150
+            9   390
+           12   90
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+                   Patch    Faces   Points                  Surface topology
+                 airFlow     1278     1396  ok (non-closed singly connected)
+            internalFace        0        0                        ok (empty)
+      internalFace_slave        0        0                        ok (empty)
+                aerofoil      880      924  ok (non-closed singly connected)
+
+Checking faceZone topology for multiply connected surfaces...
+                FaceZone    Faces   Points                  Surface topology
+            internalFace      130      161  ok (non-closed singly connected)
+
+Checking basic cellZone addressing...
+    No cellZones found.
+
+Checking geometry...
+    Overall domain bounding box (-1 -1 -1) (2 0 1)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (8.45352975085967e-18 3.03191755611285e-18 1.44860955824591e-17) OK.
+    Max cell openness = 2.94902990916057e-16 OK.
+    Max aspect ratio = 1.00000000000001 OK.
+    Minimum face area = 0.00249999999999997. Maximum face area = 0.0400000000000001.  Face area magnitudes OK.
+    Min volume = 0.000124999999999999. Max volume = 0.00800000000000003.  Total volume = 5.91999999999912.  Cell volumes OK.
+    Mesh non-orthogonality Max: 25.2394018206794 average: 8.11526320756925
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.333333333333343 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+Writing fields with mesh quality parameters
+    Writing non-orthogonality (angle) to nonOrthoAngle
+    Writing face interpolation weights (0..0.5) to faceWeight
+    Writing face skewness to skewness
+    Writing cell determinant to cellDeterminant
+    Writing aspect ratio to aspectRatio
+    Writing approximate aspect ratio to cellAspectRatio
+    Writing cell shape (hex, tet etc.) to cellShapes
+    Writing cell volume to cellVolume
+    Writing cell volume ratio to cellVolumeRatio
+    Writing minTetVolume to minTetVolume
+    Writing minPyrVolume to minPyrVolume
+    Writing cell region to cellRegion
+    Writing cell zoning to cellZone
+    Writing face zoning to faceZone
+
+Time = 2
+
+Mesh stats
+    points:           9296
+    faces:            23854
+    internal faces:   21736
+    cells:            7320
+    faces per cell:   6.22814207650273
+    boundary patches: 4
+    point zones:      0
+    face zones:       1
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     6650
+    prisms:        40
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     630
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            6   150
+            9   390
+           12   90
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+                   Patch    Faces   Points                  Surface topology
+                 airFlow     1278     1392  ok (non-closed singly connected)
+            internalFace        0        0                        ok (empty)
+      internalFace_slave        0        0                        ok (empty)
+                aerofoil      840      882  ok (non-closed singly connected)
+
+Checking faceZone topology for multiply connected surfaces...
+                FaceZone    Faces   Points                  Surface topology
+            internalFace      130      161  ok (non-closed singly connected)
+
+Checking basic cellZone addressing...
+    No cellZones found.
+
+Checking geometry...
+    Overall domain bounding box (-1.00000000694873 -1.00069089130172 -1.00003185931798) (2.00038698300687 0.000690570351179176 1.00003180863138)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (1.21033848986376e-17 1.61620369125185e-16 -6.30679333917192e-17) OK.
+    Max cell openness = 3.4097959328182e-16 OK.
+    Max aspect ratio = 4.68282095477826 OK.
+    Minimum face area = 0.000728604873758523. Maximum face area = 0.0405403799687717.  Face area magnitudes OK.
+    Min volume = 3.64303234906684e-05. Max volume = 0.00811214804152835.  Total volume = 5.91964696293997.  Cell volumes OK.
+    Mesh non-orthogonality Max: 26.4913167383006 average: 8.25250826454305
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.939752035986903 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+Writing fields with mesh quality parameters
+    Writing non-orthogonality (angle) to nonOrthoAngle
+    Writing face interpolation weights (0..0.5) to faceWeight
+    Writing face skewness to skewness
+    Writing cell determinant to cellDeterminant
+    Writing aspect ratio to aspectRatio
+    Writing approximate aspect ratio to cellAspectRatio
+    Writing cell shape (hex, tet etc.) to cellShapes
+    Writing cell volume to cellVolume
+    Writing cell volume ratio to cellVolumeRatio
+    Writing minTetVolume to minTetVolume
+    Writing minPyrVolume to minPyrVolume
+    Writing cell region to cellRegion
+    Writing cell zoning to cellZone
+    Writing face zoning to faceZone
+
+--> FOAM Warning : 
+    From virtual Foam::polyMesh::readUpdateState Foam::polyMesh::readUpdate()
+    in file meshes/polyMesh/polyMeshIO.C at line 210
+    Number of patches has changed.  This may have unexpected consequences.  Proceed with care.
+Time = 3
+
+Mesh stats
+    points:           25197
+    faces:            68246
+    internal faces:   64288
+    cells:            21580
+    faces per cell:   6.14151992585728
+    boundary patches: 2
+    point zones:      0
+    face zones:       1
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     19558
+    prisms:        40
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     1982
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            6   150
+            7   1320
+            8   32
+            9   390
+           12   90
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+                   Patch    Faces   Points                  Surface topology
+                 airFlow     3118     3268  ok (non-closed singly connected)
+                aerofoil      840      882  ok (non-closed singly connected)
+
+Checking faceZone topology for multiply connected surfaces...
+                FaceZone    Faces   Points                  Surface topology
+            internalFace      130      161  ok (non-closed singly connected)
+
+Checking basic cellZone addressing...
+    No cellZones found.
+
+Checking geometry...
+    Overall domain bounding box (-1.00268699148183 -1.00034461502069 -1.0202683920855) (2.00038698300687 0.000344385445693415 1.02026780912773)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (-2.02043133788514e-18 1.73733873986872e-17 2.0976163552875e-17) OK.
+ ***High aspect ratio cells found, Max aspect ratio: 11788.6640525965, number of cells 2270
+  <<Writing 2270 cells with high aspect ratio to set highAspectRatioCells
+    Minimum face area = 3.36014963868973e-07. Maximum face area = 0.0414939108892163.  Face area magnitudes OK.
+    Min volume = 1.72046229602006e-08. Max volume = 0.00824747636345375.  Total volume = 5.92052171022327.  Cell volumes OK.
+    Mesh non-orthogonality Max: 35.8912910084058 average: 6.04678783129602
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 2.30670635219916 OK.
+    Coupled point location match (average 0) OK.
+
+Failed 1 mesh checks.
+
+Writing fields with mesh quality parameters
+    Writing non-orthogonality (angle) to nonOrthoAngle
+    Writing face interpolation weights (0..0.5) to faceWeight
+    Writing face skewness to skewness
+    Writing cell determinant to cellDeterminant
+    Writing aspect ratio to aspectRatio
+    Writing approximate aspect ratio to cellAspectRatio
+    Writing cell shape (hex, tet etc.) to cellShapes
+    Writing cell volume to cellVolume
+    Writing cell volume ratio to cellVolumeRatio
+    Writing minTetVolume to minTetVolume
+    Writing minPyrVolume to minPyrVolume
+    Writing cell region to cellRegion
+    Writing cell zoning to cellZone
+    Writing face zoning to faceZone
+
+End
+

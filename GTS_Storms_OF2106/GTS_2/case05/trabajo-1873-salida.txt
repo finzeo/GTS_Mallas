@@ -1,0 +1,52 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2106                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _c15bfde3cb-20210624 OPENFOAM=2106
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /share/apps/foamMeshToMED/OpenFOAMv2106/foamMeshToMED
+Date   : Sep 18 2023
+Time   : 11:54:36
+Host   : n-4
+PID    : 237948
+I/O    : uncollated
+Case   : /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case05
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Read the mesh
+
+Creating MEDfile
+Writing Comment
+Creating Mesh
+Translating time = 4
+wrote 86646904 prisms with each 8 nodes
+wrote 46520 prisms with each 6 nodes
+wrote 1294765 polyhedrons
+going to write face patches to med 
+doing to write face prisms for 204
+going throught the data
+writing to med
+wrote 3212056 face prisms with each 4 nodes
+wrote families for 204
+wrote 10538 polygons
+wrote families for 400
+going to write families
+wrote familyinfo for patch inlet
+wrote familyinfo for patch outlet
+wrote familyinfo for patch left
+wrote familyinfo for patch right
+wrote familyinfo for patch floor
+wrote familyinfo for patch top
+wrote familyinfo for patch gtsModel
+wrote familyinfo for patch gtsCorners
+End
+

@@ -1,0 +1,1 @@
+./Allrun_part3: line 3: WM_PROJECT_DIR: parameter null or not set

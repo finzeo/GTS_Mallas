@@ -1,0 +1,30 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # Run from this directory
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+runApplication surfaceFeatureExtract
+runApplication blockMesh
+runApplication decomposePar
+runParallel snappyHexMesh -overwrite -dict system/snappyHexMeshDict
+cp log.snappyHexMesh log.snappyHexMesh1
+rm -rf ./log.snappyHexMesh
+runParallel snappyHexMesh -overwrite -dict system/snappyHexMeshLayersDict
+mv log.snappyHexMesh log.snappyHexMesh2
+
+#- For non-parallel running
+#cp -r 0.orig 0 > /dev/null 2>&1
+
+#- For parallel running
+ls -d processor* | xargs -I {} rm -rf ./{}/0
+#ls -d processor* | xargs -I {} cp -r 0.orig ./{}/0
+
+#runParallel patchSummary
+#runParallel potentialFoam
+#runParallel $(getApplication)
+
+runApplication reconstructParMesh -constant
+runApplication renumberMesh -latestTime
+runApplication checkMesh
+
+#------------------------------------------------------------------------------

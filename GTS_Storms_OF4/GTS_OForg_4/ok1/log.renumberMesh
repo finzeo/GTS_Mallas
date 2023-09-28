@@ -1,0 +1,42 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.x
+Exec   : renumberMesh -latestTime
+Date   : Jun 08 2023
+Time   : 16:45:38
+Host   : "cluster62"
+PID    : 148267
+Case   : /share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = constant
+
+Mesh size: 11473732
+Before renumbering :
+    band           : 10902852
+    profile        : 1.20229e+12
+
+Using default renumberMethod.
+
+Selecting renumberMethod CuthillMcKee
+
+
+After renumbering :
+    band           : 175497
+    profile        : 1.32844e+12
+
+Writing mesh to "1"
+
+End
+

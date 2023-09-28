@@ -1,0 +1,1 @@
+slurmstepd: error: *** JOB 1329 ON n-8 CANCELLED AT 2023-08-24T01:30:26 ***

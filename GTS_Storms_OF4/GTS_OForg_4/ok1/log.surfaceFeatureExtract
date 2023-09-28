@@ -1,0 +1,82 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.x
+Exec   : surfaceFeatureExtract
+Date   : Jun 08 2023
+Time   : 16:26:07
+Host   : "cluster62"
+PID    : 107215
+Case   : /share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surfaceFeatureExtractDict
+
+Surface            : "GTS-Storms-v9.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 9996
+Vertices     : 5000
+Bounding Box : (-2.47648 -0.161925 -0.0762) (0 0.161925 0.4508)
+
+
+Constructing feature set from included angle 92
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 4
+    feature edges  : 989
+    of which
+        region edges   : 0
+        external edges : 509
+        internal edges : 480
+
+
+Final feature set:
+    points : 989
+    of which
+        convex             : 4
+        concave            : 0
+        mixed              : 0
+        non-feature        : 985
+    edges  : 989
+    of which
+        external edges     : 509
+        internal edges     : 480
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9"
+Writing convex feature points to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9_convexFeaturePts.obj"
+Writing concave feature points to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9_concaveFeaturePts.obj"
+Writing mixed feature points to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9_mixedFeaturePtsStructure.obj"
+Writing external edges to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9_externalEdges.obj"
+Writing internal edges to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9_internalEdges.obj"
+Writing flat edges to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9_flatEdges.obj"
+Writing open edges to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9_openEdges.obj"
+Writing multiple edges to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9_multipleEdges.obj"
+Writing region edges to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9_regionEdges.obj"
+Writing edge directions to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/extendedFeatureEdgeMesh/GTS-Storms-v9_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant/triSurface/GTS-Storms-v9.eMesh"
+
+ExecutionTime = 0.06 s  ClockTime = 0 s
+
+End
+

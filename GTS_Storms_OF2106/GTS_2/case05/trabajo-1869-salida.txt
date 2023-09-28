@@ -1,0 +1,9 @@
+Cleaning case /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case05
+Running blockMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case05
+Running decomposePar on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case05
+Running snappyHexMesh (128 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case05 
+Running snappyHexMesh (128 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case05 
+Running snappyHexMesh (128 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case05 
+Running reconstructParMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case05
+Running renumberMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case05
+Running checkMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case05

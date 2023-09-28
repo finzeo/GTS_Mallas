@@ -1,0 +1,16 @@
+solid GTS-Storms-v12-outlet
+   facet normal 1.000000e+00 0.000000e+00 0.000000e+00
+      outer loop
+         vertex 4.40056905e+00 1.524000e+00 2.057400e+00
+         vertex 4.40056905e+00 -1.524000e+00 2.057400e+00
+         vertex 4.40056905e+00 1.524000e+00 -7.620000e-02
+      endloop
+   endfacet
+   facet normal 1.000000e+00 0.000000e+00 0.000000e+00
+      outer loop
+         vertex 4.40056905e+00 1.524000e+00 -7.620000e-02
+         vertex 4.40056905e+00 -1.524000e+00 2.057400e+00
+         vertex 4.40056905e+00 -1.524000e+00 -7.620000e-02
+      endloop
+   endfacet
+endsolid

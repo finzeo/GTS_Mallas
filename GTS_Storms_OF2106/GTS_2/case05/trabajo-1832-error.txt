@@ -1,0 +1,1 @@
+slurmstepd: error: *** JOB 1832 ON n-37 CANCELLED AT 2023-09-15T16:14:53 ***

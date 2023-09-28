@@ -1,0 +1,137 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2106                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _c15bfde3cb-20210624 OPENFOAM=2106
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceFeatureExtract
+Date   : Aug 04 2023
+Time   : 19:33:27
+Host   : n-22
+PID    : 7513
+I/O    : uncollated
+Case   : /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+Note: Feature line extraction only valid on closed manifold surfaces
+
+Reading surfaceFeatureExtractDict
+
+Surfaces     : GTS-Storms-v11-part1.stl
+Output       : GTS-Storms-v11-part1
+Load options : offset
+Write options: writeObj=yes writeVTK=off
+
+Statistics:
+Triangles    : 8192 in 1 region(s)
+Vertices     : 4098
+Bounding Box : (-2.47648 -0.161925 0) (0 0.161925 0.4508)
+
+Constructing feature set from included angle 92
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 4
+    edges  : 29
+    of which
+        region edges   : 0
+        external edges : 29
+        internal edges : 0
+
+Final Feature set:
+    points : 29
+    of which
+        convex             : 4
+        concave            : 0
+        mixed              : 0
+        non-feature        : 25
+    edges  : 29
+    of which
+        external edges     : 29
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1"
+Writing 4 convex feature points to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1_convexFeaturePts.obj"
+Writing 0 concave feature points to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1_concaveFeaturePts.obj"
+Writing 0 mixed feature points to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1_mixedFeaturePts.obj"
+Writing 0 mixed feature point structure to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1_mixedFeaturePtsStructure.obj"
+Writing 29 external edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1_externalEdges.obj"
+Writing 0 internal edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1_internalEdges.obj"
+Writing 0 flat edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1_flatEdges.obj"
+Writing 0 open edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1_openEdges.obj"
+Writing 0 multiple edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1_multipleEdges.obj"
+Writing 0 region edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1_regionEdges.obj"
+Writing 29 edge directions to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part1_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/triSurface/GTS-Storms-v11-part1.eMesh"
+Surfaces     : GTS-Storms-v11-part2.stl
+Output       : GTS-Storms-v11-part2
+Load options : offset
+Write options: writeObj=yes writeVTK=off
+
+Statistics:
+Triangles    : 1968 in 1 region(s)
+Vertices     : 992
+Bounding Box : (-1.73164 -0.149625 -0.0762) (-0.136975 0.149625 -5e-07)
+
+Constructing feature set from included angle 0
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 0
+    edges  : 0
+    of which
+        region edges   : 0
+        external edges : 0
+        internal edges : 0
+
+Final Feature set:
+    points : 0
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 0
+    edges  : 0
+    of which
+        external edges     : 0
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2"
+Writing 0 convex feature points to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2_convexFeaturePts.obj"
+Writing 0 concave feature points to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2_concaveFeaturePts.obj"
+Writing 0 mixed feature points to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2_mixedFeaturePts.obj"
+Writing 0 mixed feature point structure to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2_mixedFeaturePtsStructure.obj"
+Writing 0 external edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2_externalEdges.obj"
+Writing 0 internal edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2_internalEdges.obj"
+Writing 0 flat edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2_flatEdges.obj"
+Writing 0 open edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2_openEdges.obj"
+Writing 0 multiple edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2_multipleEdges.obj"
+Writing 0 region edges to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2_regionEdges.obj"
+Writing 0 edge directions to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/extendedFeatureEdgeMesh/GTS-Storms-v11-part2_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106/constant/triSurface/GTS-Storms-v11-part2.eMesh"
+ExecutionTime = 0.02 s  ClockTime = 0 s
+
+End
+

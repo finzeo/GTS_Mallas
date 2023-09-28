@@ -1,0 +1,3 @@
+Running snappyHexMesh (32 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106_v5 
+reconstructParMesh already run on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106_v5: remove log file 'log.reconstructParMesh' to re-run
+renumberMesh already run on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/GTS_2106_v5: remove log file 'log.renumberMesh' to re-run

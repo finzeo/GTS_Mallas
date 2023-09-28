@@ -1,0 +1,333 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.x
+Exec   : reconstructParMesh -constant
+Date   : Jun 08 2023
+Time   : 16:42:39
+Host   : "cluster62"
+PID    : 141950
+Case   : /share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-07
+Write tolerance : 1e-06
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 20 processor directories
+
+Reading database "GTS_OForg_4/processor0"
+Reading database "GTS_OForg_4/processor1"
+Reading database "GTS_OForg_4/processor2"
+Reading database "GTS_OForg_4/processor3"
+Reading database "GTS_OForg_4/processor4"
+Reading database "GTS_OForg_4/processor5"
+Reading database "GTS_OForg_4/processor6"
+Reading database "GTS_OForg_4/processor7"
+Reading database "GTS_OForg_4/processor8"
+Reading database "GTS_OForg_4/processor9"
+Reading database "GTS_OForg_4/processor10"
+Reading database "GTS_OForg_4/processor11"
+Reading database "GTS_OForg_4/processor12"
+Reading database "GTS_OForg_4/processor13"
+Reading database "GTS_OForg_4/processor14"
+Reading database "GTS_OForg_4/processor15"
+Reading database "GTS_OForg_4/processor16"
+Reading database "GTS_OForg_4/processor17"
+Reading database "GTS_OForg_4/processor18"
+Reading database "GTS_OForg_4/processor19"
+Time = constant
+
+Reading points from "GTS_OForg_4/processor0" for time = constant
+
+Reading points from "GTS_OForg_4/processor1" for time = constant
+
+Reading points from "GTS_OForg_4/processor2" for time = constant
+
+Reading points from "GTS_OForg_4/processor3" for time = constant
+
+Reading points from "GTS_OForg_4/processor4" for time = constant
+
+Reading points from "GTS_OForg_4/processor5" for time = constant
+
+Reading points from "GTS_OForg_4/processor6" for time = constant
+
+Reading points from "GTS_OForg_4/processor7" for time = constant
+
+Reading points from "GTS_OForg_4/processor8" for time = constant
+
+Reading points from "GTS_OForg_4/processor9" for time = constant
+
+Reading points from "GTS_OForg_4/processor10" for time = constant
+
+Reading points from "GTS_OForg_4/processor11" for time = constant
+
+Reading points from "GTS_OForg_4/processor12" for time = constant
+
+Reading points from "GTS_OForg_4/processor13" for time = constant
+
+Reading points from "GTS_OForg_4/processor14" for time = constant
+
+Reading points from "GTS_OForg_4/processor15" for time = constant
+
+Reading points from "GTS_OForg_4/processor16" for time = constant
+
+Reading points from "GTS_OForg_4/processor17" for time = constant
+
+Reading points from "GTS_OForg_4/processor18" for time = constant
+
+Reading points from "GTS_OForg_4/processor19" for time = constant
+
+Overall mesh bounding box  : (-7.33423 -1.524 -0.0762) (4.40057 1.524 2.0574)
+Relative tolerance         : 1e-07
+Absolute matching distance : 1.23105e-06
+
+Constructing empty mesh to add to.
+
+Reading mesh to add from "GTS_OForg_4/processor0" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor1" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor2" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor3" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor4" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor5" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor6" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor7" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor8" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor9" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor10" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor11" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor12" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor13" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor14" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor15" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor16" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor17" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor18" for time = constant
+
+Adding to master mesh
+
+
+Reading mesh to add from "GTS_OForg_4/processor19" for time = constant
+
+Adding to master mesh
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/share/storage/finzeo/Mallas/test/GTS_OF4/GTS_OForg_4/constant"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "GTS_OForg_4/processor0"
+Writing pointProcAddressing to "GTS_OForg_4/processor0/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor0/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor0/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor0/constant/polyMesh"
+
+Reading processor 1 mesh from "GTS_OForg_4/processor1"
+Writing pointProcAddressing to "GTS_OForg_4/processor1/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor1/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor1/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor1/constant/polyMesh"
+
+Reading processor 2 mesh from "GTS_OForg_4/processor2"
+Writing pointProcAddressing to "GTS_OForg_4/processor2/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor2/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor2/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor2/constant/polyMesh"
+
+Reading processor 3 mesh from "GTS_OForg_4/processor3"
+Writing pointProcAddressing to "GTS_OForg_4/processor3/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor3/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor3/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor3/constant/polyMesh"
+
+Reading processor 4 mesh from "GTS_OForg_4/processor4"
+Writing pointProcAddressing to "GTS_OForg_4/processor4/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor4/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor4/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor4/constant/polyMesh"
+
+Reading processor 5 mesh from "GTS_OForg_4/processor5"
+Writing pointProcAddressing to "GTS_OForg_4/processor5/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor5/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor5/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor5/constant/polyMesh"
+
+Reading processor 6 mesh from "GTS_OForg_4/processor6"
+Writing pointProcAddressing to "GTS_OForg_4/processor6/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor6/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor6/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor6/constant/polyMesh"
+
+Reading processor 7 mesh from "GTS_OForg_4/processor7"
+Writing pointProcAddressing to "GTS_OForg_4/processor7/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor7/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor7/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor7/constant/polyMesh"
+
+Reading processor 8 mesh from "GTS_OForg_4/processor8"
+Writing pointProcAddressing to "GTS_OForg_4/processor8/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor8/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor8/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor8/constant/polyMesh"
+
+Reading processor 9 mesh from "GTS_OForg_4/processor9"
+Writing pointProcAddressing to "GTS_OForg_4/processor9/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor9/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor9/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor9/constant/polyMesh"
+
+Reading processor 10 mesh from "GTS_OForg_4/processor10"
+Writing pointProcAddressing to "GTS_OForg_4/processor10/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor10/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor10/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor10/constant/polyMesh"
+
+Reading processor 11 mesh from "GTS_OForg_4/processor11"
+Writing pointProcAddressing to "GTS_OForg_4/processor11/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor11/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor11/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor11/constant/polyMesh"
+
+Reading processor 12 mesh from "GTS_OForg_4/processor12"
+Writing pointProcAddressing to "GTS_OForg_4/processor12/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor12/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor12/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor12/constant/polyMesh"
+
+Reading processor 13 mesh from "GTS_OForg_4/processor13"
+Writing pointProcAddressing to "GTS_OForg_4/processor13/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor13/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor13/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor13/constant/polyMesh"
+
+Reading processor 14 mesh from "GTS_OForg_4/processor14"
+Writing pointProcAddressing to "GTS_OForg_4/processor14/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor14/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor14/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor14/constant/polyMesh"
+
+Reading processor 15 mesh from "GTS_OForg_4/processor15"
+Writing pointProcAddressing to "GTS_OForg_4/processor15/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor15/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor15/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor15/constant/polyMesh"
+
+Reading processor 16 mesh from "GTS_OForg_4/processor16"
+Writing pointProcAddressing to "GTS_OForg_4/processor16/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor16/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor16/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor16/constant/polyMesh"
+
+Reading processor 17 mesh from "GTS_OForg_4/processor17"
+Writing pointProcAddressing to "GTS_OForg_4/processor17/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor17/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor17/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor17/constant/polyMesh"
+
+Reading processor 18 mesh from "GTS_OForg_4/processor18"
+Writing pointProcAddressing to "GTS_OForg_4/processor18/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor18/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor18/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor18/constant/polyMesh"
+
+Reading processor 19 mesh from "GTS_OForg_4/processor19"
+Writing pointProcAddressing to "GTS_OForg_4/processor19/constant/polyMesh"
+Writing faceProcAddressing to "GTS_OForg_4/processor19/constant/polyMesh"
+Writing cellProcAddressing to "GTS_OForg_4/processor19/constant/polyMesh"
+Writing boundaryProcAddressing to "GTS_OForg_4/processor19/constant/polyMesh"
+
+End.
+

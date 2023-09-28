@@ -1,0 +1,5 @@
+Cleaning case /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case03
+Running blockMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case03
+Running decomposePar on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case03
+Running snappyHexMesh (128 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case03 
+Running snappyHexMesh (128 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_2/case03 

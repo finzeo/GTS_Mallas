@@ -1,0 +1,1 @@
+/share/apps/easybuild/software/OpenFOAM/v2106-foss-2021a/OpenFOAM-v2106/bin/tools/RunFunctions: line 219: 210630 Aborted                 $appRun $appArgs "$@" > $logFile 2>&1
