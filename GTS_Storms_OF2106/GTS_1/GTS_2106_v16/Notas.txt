@@ -1,0 +1,4 @@
+Cambios
+	Se basa en la malla 14 (caracterizada por crearse una única zona de nivel 4 en la estela, en una distancia igual a la longitud del vehículo. La malla quedó con bastantes menos celdas y no hay cambio abrupto de nivel 5 a nivel 3 como antes)
+	Se extiende el dominio, por recomendación de Unaune: el dice entre 25w y 40w desde la parte trasera del vehículo hasta la salida. Considero la mitad aprox, 32.5w = 10.525125 m, ajustado ligeramente para que hayan elementos cúbicos perfectos con blockMesh
+

@@ -1,0 +1,3 @@
+Running reconstructParMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel
+Running renumberMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel
+Running checkMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel

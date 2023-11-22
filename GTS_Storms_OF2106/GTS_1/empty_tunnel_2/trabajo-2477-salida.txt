@@ -1,0 +1,7 @@
+Cleaning case /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_2
+Running blockMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_2
+Running decomposePar on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_2
+Running snappyHexMesh (32 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_2 
+Running reconstructParMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_2
+Running renumberMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_2
+Running checkMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_2

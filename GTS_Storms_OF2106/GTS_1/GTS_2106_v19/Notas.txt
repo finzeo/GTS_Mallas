@@ -1,0 +1,4 @@
+Cambios
+	Se mantiene el seteo de la malla 16 y 17 (caracterizada por crearse una única zona de nivel 4 en la estela, en una distancia igual a la longitud del vehículo, pero con extensión del dominio de 25w aprox ahora; antes 32.5w)
+	Se mantiene la mejora del snapping con todos los features del modelo, hecho en la malla 17
+	Se mantiene la mejora en la transición en el encapado en las zonas de menor refinamiento (esto para que las corridas con all walls BC me den mejor), hecho en la malla 18

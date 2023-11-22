@@ -1,0 +1,58 @@
+solid GTS-Storms-v15-part3-v2
+   facet normal -0.000000e+00 0.000000e+00 1.000000e+00
+      outer loop
+         vertex -2.322195e-01 1.496377e-01 0.000000e+00
+         vertex -2.322195e-01 5.438775e-02 0.000000e+00
+         vertex -1.369695e-01 1.496377e-01 0.000000e+00
+      endloop
+   endfacet
+   facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+      outer loop
+         vertex -1.369695e-01 1.496377e-01 0.000000e+00
+         vertex -2.322195e-01 5.438775e-02 0.000000e+00
+         vertex -1.369695e-01 5.438775e-02 0.000000e+00
+      endloop
+   endfacet
+   facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+      outer loop
+         vertex -1.731645e+00 5.438775e-02 0.000000e+00
+         vertex -1.636395e+00 5.438775e-02 0.000000e+00
+         vertex -1.731645e+00 1.496377e-01 0.000000e+00
+      endloop
+   endfacet
+   facet normal -0.000000e+00 0.000000e+00 1.000000e+00
+      outer loop
+         vertex -1.731645e+00 1.496377e-01 0.000000e+00
+         vertex -1.636395e+00 5.438775e-02 0.000000e+00
+         vertex -1.636395e+00 1.496377e-01 0.000000e+00
+      endloop
+   endfacet
+   facet normal 0.000000e+00 -0.000000e+00 1.000000e+00
+      outer loop
+         vertex -1.636395e+00 -1.496377e-01 0.000000e+00
+         vertex -1.636395e+00 -5.438775e-02 0.000000e+00
+         vertex -1.731645e+00 -1.496377e-01 0.000000e+00
+      endloop
+   endfacet
+   facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+      outer loop
+         vertex -1.731645e+00 -1.496377e-01 0.000000e+00
+         vertex -1.636395e+00 -5.438775e-02 0.000000e+00
+         vertex -1.731645e+00 -5.438775e-02 0.000000e+00
+      endloop
+   endfacet
+   facet normal 0.000000e+00 0.000000e+00 1.000000e+00
+      outer loop
+         vertex -2.322195e-01 -1.496377e-01 0.000000e+00
+         vertex -1.369695e-01 -1.496377e-01 0.000000e+00
+         vertex -2.322195e-01 -5.438775e-02 0.000000e+00
+      endloop
+   endfacet
+   facet normal -0.000000e+00 0.000000e+00 1.000000e+00
+      outer loop
+         vertex -2.322195e-01 -5.438775e-02 0.000000e+00
+         vertex -1.369695e-01 -1.496377e-01 0.000000e+00
+         vertex -1.369695e-01 -5.438775e-02 0.000000e+00
+      endloop
+   endfacet
+endsolid

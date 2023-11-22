@@ -1,0 +1,5 @@
+Cambios
+	Se mantiene el seteo de la malla 16 y 17 (caracterizada por crearse una única zona de nivel 4 en la estela, en una distancia igual a la longitud del vehículo, pero con extensión del dominio de 25w aprox ahora; antes 32.5w)
+	Se mantiene la mejora del snapping con todos los features del modelo, hecho en la malla 17
+	Se mantiene la mejora en la transición en el encapado en las zonas de menor refinamiento (esto para que las corridas con all walls BC me den mejor), hecho en la malla 18
+	Se hace, luego de consultarle a Storms, una divergencia del 0.89% en las paredes laterales sobre el total del ancho, siendo 10 ft a 10.1336 ft las secciones de entrada y salida de la sección de prueba. Este es el cambio a destacar.

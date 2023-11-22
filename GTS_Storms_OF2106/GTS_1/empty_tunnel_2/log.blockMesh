@@ -1,0 +1,77 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2106                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _c15bfde3cb-20210624 OPENFOAM=2106
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Oct 10 2023
+Time   : 20:59:46
+Host   : n-43
+PID    : 1647226
+I/O    : uncollated
+Case   : /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_2
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list (topological search)...
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.01905000000000001 .. 0.01905000000000001
+        j : 0.01905000000000001 .. 0.01905000000000001
+        k : 0.01904999999999999 .. 0.01905000000000001
+
+
+There are no merge patch pairs
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (-7.334230950000002 -1.524 -0.07620000000000002) (-7.315180949999998 1.524 2.0574)
+  nPoints: 36386
+  nCells: 17920
+  nFaces: 71952
+  nInternalFaces: 35568
+----------------
+Patches
+----------------
+  patch 0 (start: 35568 size: 17920) name: inlet
+  patch 1 (start: 53488 size: 17920) name: outlet
+  patch 2 (start: 71408 size: 112) name: left
+  patch 3 (start: 71520 size: 112) name: right
+  patch 4 (start: 71632 size: 160) name: floor
+  patch 5 (start: 71792 size: 160) name: top
+
+End
+

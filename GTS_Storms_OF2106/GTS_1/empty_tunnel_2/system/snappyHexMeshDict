@@ -1,0 +1,580 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2106                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      snappyHexMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Which of the steps to run
+castellatedMesh false;
+snap            false;
+addLayers       true;
+
+
+// Geometry. Definition of all surfaces. All surfaces are of class
+// searchableSurface.
+// Surfaces are used
+// - to specify refinement for any mesh cell intersecting it
+// - to specify refinement for any mesh cell inside/outside/near
+// - to 'snap' the mesh boundary to the surface
+
+// Parametros
+
+// Refinamiento sobre el GTS
+// Niveles - eje x
+xg1i	-7.33423095;//-4.36243095; // Se elige asi para cortar en un borde de elemento
+xg1f	 4.40056905;
+xg2i	-3.67663095;
+xg2f	 3.82906905;// 4.40056905;
+xg3i	-3.06703095;
+xg3f	 3.54331905;// 2.26696905;
+xg4i	-2.92415595;
+xg4f	 3.40044405;
+xg5i	-0.28300000;//-0.30000000;
+xg5f	 0.25000000;
+// Niveles - eje y
+yg1i	-1.524;//-1.0668;
+yg1f	 1.524;// 1.0668;
+yg2i	-0.6858;
+yg2f	 0.6858;
+yg3i	-0.4572;
+yg3f	 0.4572;
+yg4i	-0.3143;
+yg4f	 0.3143;
+yg5i	-0.2700;
+yg5f	 0.2700;
+// Niveles - eje z
+zg1i	-0.0762;
+zg1f	 2.0574;// 1.524;
+zg2i	-0.0762;	 
+zg2f	 0.9906;
+zg3i	-0.0762;
+zg3f	 0.6858;
+zg4i	-0.0762;
+zg4f	 0.5429;
+zg5i	-0.0762;
+zg5f	 0.5200;//0.6400;
+
+// Refinamiento sobre el suelo
+//xfi	-7.33423095;
+//xff	 4.40056905;
+//yfi	-1.553265515;
+//yff	 1.553265515;
+//zfi	-0.0762;
+//zf1f	 0.28000; // OK, para lograr al menos 4 capas de cada nivel sobre el suelo, desde nivel 1 hasta nivel 4
+//zf2f	 0.12000;
+//zf3f	 0.04000;
+
+// Refinamiento sobre techo
+//xti	-7.33423095;
+//xtf	 4.40056905;
+//yti	-1.553265515;
+//ytf	 1.553265515;
+//zt1i	 1.70;	
+//zt2i	 1.86;
+//zt3i	 1.94;
+//ztf	 2.0574;
+
+// Refinamiento sobre pared lateral izquierda
+//xli	-7.33423095;
+//xlf	 4.40056905;
+//yli	-1.553265515;
+//yl1f	-1.19;
+//yl2f	-1.35;
+//yl3f	-1.43;
+//zli	-0.0762;
+//zlf	 2.0574;
+
+// Refinamiento sobre pared lateral derecha
+//xri	-7.33423095;
+//xrf	 4.40056905;
+//yr1i	 1.19;
+//yr2i	 1.35;
+//yr3i	 1.43;
+//yrf	 1.553265515;
+//zri	-0.0762;
+//zrf	 2.0574;
+
+// Refinamiento en torno a struts (prismático)	
+xs1i	-0.2322195;
+xs1f	-0.1369695;
+ys1i	-0.14963775;
+ys1f	-0.05438775;
+zs1i	-0.0762;
+zs1f	 0.0;
+//
+xs2i	-0.2322195;
+xs2f	-0.1369695;
+ys2i	 0.05438775;
+ys2f	 0.14963775;
+zs2i	-0.0762;
+zs2f	 0.0;
+//
+xs3i	-1.731645;
+xs3f	-1.636395;
+ys3i	-0.14963775;
+ys3f	-0.05438775;
+zs3i	-0.0762;
+zs3f	 0.0;
+//
+xs4i	-1.731645;
+xs4f	-1.636395;
+ys4i	 0.05438775;
+ys4f	 0.14963775;
+zs4i	-0.0762;
+zs4f	 0.0;
+
+geometry
+{
+	// GTS
+/*
+    GTS-Storms-v15-part1-sup.stl
+    {
+        type triSurfaceMesh;
+		name gtsModel;
+    }
+    GTS-Storms-v15-part2-sup.stl
+    {
+        type triSurfaceMesh;
+		name gtsStruts;
+    }
+    GTS-Storms-v15-part3-sup-v2.stl
+    {
+        type triSurfaceMesh;
+		name gtsStrutsPads;
+    }
+*/
+	// Refinement regions over GTS
+/*
+    refinementBox1 
+    {
+        type box;
+        min ($xg1i $yg1i $zg1i); 
+        max ($xg1f $yg1f $zg1f);   
+    }
+    refinementBox2
+    {
+        type box;
+        min ($xg2i $yg2i $zg2i); 
+        max ($xg2f $yg2f $zg2f); 
+    }
+    refinementBox3
+    {
+        type box;
+        min ($xg3i $yg3i $zg3i); 
+        max ($xg3f $yg3f $zg3f); 
+    }
+    refinementBox4
+    {
+        type box;
+        min ($xg4i $yg4i $zg4i); 
+        max ($xg4f $yg4f $zg4f); 
+    }
+    refinementBox5
+    {
+        type box;
+        min ($xg5i $yg5i $zg5i); 
+        max ($xg5f $yg5f $zg5f); 
+    }
+*/
+	// Refinement regions over struts
+/*
+    refinementStruts1 
+    {
+        type box;
+        min ($xs1i $ys1i $zs1i); 
+        max ($xs1f $ys1f $zs1f); 
+    }
+    refinementStruts2
+    {
+        type box;
+        min ($xs2i $ys2i $zs2i); 
+        max ($xs2f $ys2f $zs2f); 
+    }
+    refinementStruts3
+    {
+        type box;
+        min ($xs3i $ys3i $zs3i); 
+        max ($xs3f $ys3f $zs3f); 
+    }
+    refinementStruts4
+    {
+        type box;
+        min ($xs4i $ys4i $zs4i); 
+        max ($xs4f $ys4f $zs4f); 
+    }
+*/
+}
+
+
+// Settings for the castellatedMesh generation.
+castellatedMeshControls
+{
+
+    // Refinement parameters
+    // ~~~~~~~~~~~~~~~~~~~~~
+
+    maxLoadUnbalance 	   0.10;
+    maxLocalCells 	 	 500000;
+    maxGlobalCells    100000000;
+    minRefinementCells 	     10;
+    nCellsBetweenLevels       3;
+
+
+
+    // Explicit feature edge refinement
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    features
+    (
+/*
+		{
+			file "pointRefinement.eMesh";
+			levels ((0.1 6));
+			//level 7;
+		}
+		{
+            file "wakeBorders1.eMesh";
+			levels ((0.050 6));
+			//level 7;
+        }
+        {
+            file "wakeBorders2.eMesh";
+			levels ((0.050 6));
+			//level 7;
+        }
+		{
+            file "frontBottomBorder.eMesh";
+			levels ((0.1 6));
+			//level 7;
+        }
+*/
+    );
+
+    // Surface based refinement
+    // ~~~~~~~~~~~~~~~~~~~~~~~~
+
+    refinementSurfaces
+    {
+/*
+        gtsModel
+        {
+            level (5 5);
+            patchInfo
+            {
+                type wall;
+                inGroups (gts_surface);
+            }
+        }
+        gtsStruts
+        {
+            level (5 5);
+            patchInfo
+            {
+                type wall;
+                inGroups (gts_struts);
+            }
+        }
+        gtsStrutsPads
+        {
+            level (5 5);
+            patchInfo
+            {
+                type wall;
+                inGroups (gts_struts);
+            }
+        }
+*/
+        inlet
+        {
+            level (0 0);
+            patchInfo
+            {
+                type patch;
+                inGroups (inlet);
+            }
+        }
+        outlet
+        {
+            level (0 0);
+            patchInfo
+            {
+                type patch;
+                inGroups (outlet);
+            }
+        }
+        floor
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups (floorGroup);
+            }
+        }
+        top
+        {
+            level (1 1);
+            patchInfo
+            {
+                type wall;
+                inGroups (top);
+            }
+        }
+        right
+        {
+            level (1 1);
+            patchInfo
+            {
+                type patch;
+                inGroups (lateral);
+            }
+        }
+        left
+        {
+            level (1 1);
+            patchInfo
+            {
+                type patch;
+                inGroups (lateral);
+            }
+        }
+    }
+
+    // Resolve sharp angles
+    resolveFeatureAngle 30;
+
+
+    // Region-wise refinement
+    // ~~~~~~~~~~~~~~~~~~~~~~
+
+    // Specifies refinement level for cells in relation to a surface. One of
+    // three modes
+    // - distance. 'levels' specifies per distance to the surface the
+    //   wanted refinement level. The distances need to be specified in
+    //   descending order.
+    // - inside. 'levels' is only one entry and only the level is used. All
+    //   cells inside the surface get refined up to the level. The surface
+    //   needs to be closed for this to be possible.
+    // - outside. Same but cells outside.
+
+    refinementRegions
+    {
+/*
+        refinementBox1
+        {
+            mode inside;
+            levels ((1E15 1));
+        }
+        refinementBox2
+        {
+            mode inside;
+            levels ((1E15 2));
+        }
+        refinementBox3
+        {
+            mode inside;
+            levels ((1E15 3));
+        }
+        //refinementBox4
+        //{
+        //    mode inside;
+        //    levels ((1E15 4));
+        //}
+        refinementBox5
+        {
+            mode inside;
+            levels ((1E15 5));
+        }
+		gtsModel
+		{
+			mode distance;
+			levels
+			(
+			(0.015 5)
+			);
+		}
+		gtsStruts
+		{
+			mode distance;
+			levels
+			(
+			(0.015 5)
+			);
+		}
+*/
+/*
+		gtsStruts
+		{
+			mode distance;
+			levels
+			(
+			(0.015 4)
+			);
+		}
+*/	
+/*
+		gtsStrutsPads
+		{
+			mode distance;
+			levels
+			(
+			(0.015 5)
+			);
+		}
+*/
+    }
+
+
+    // Mesh selection
+    // ~~~~~~~~~~~~~~
+
+    locationInMesh (2.0001 0.0001 0.5002);
+    allowFreeStandingZoneFaces true;
+}
+
+
+
+// Settings for the snapping.
+snapControls
+{
+    nSmoothPatch 5; //3;
+    tolerance 2.0;
+    nSolveIter 300;
+    nRelaxIter 5;
+    // Feature snapping
+        nFeatureSnapIter 30; //10;
+        implicitFeatureSnap false;
+        explicitFeatureSnap true;
+        multiRegionFeatureSnap false;
+	//strictRegionSnap true;
+}
+
+
+
+// Settings for the layer addition.
+addLayersControls
+{
+    relativeSizes false;
+
+    expansionRatio 1.2;
+    firstLayerThickness 5e-4;
+
+    minThickness 0.0001; //0.01; // original 0.1
+    nGrow 0;
+
+    // Per final patch (so not geometry!) the layer information
+    layers
+    {
+/*
+	gtsStruts
+        {
+            nSurfaceLayers 5;
+	    	expansionRatio 1.333;
+	    	firstLayerThickness 7.541e-4;
+        }
+	gtsStrutsPads
+        {
+            nSurfaceLayers 5;
+	    	expansionRatio 1.333;
+	    	firstLayerThickness 7.541e-4;
+        }
+	gtsModel
+        {
+            nSurfaceLayers 5;
+	    	expansionRatio 1.333;
+	    	firstLayerThickness 7.541e-4;
+        }
+*/
+	floor
+		{
+            nSurfaceLayers 16;
+	    	expansionRatio 1.2;
+	    	firstLayerThickness 5e-4;
+		}
+	top
+		{
+            nSurfaceLayers 16;
+	    	expansionRatio 1.2;
+	    	firstLayerThickness 5e-4;
+		}
+	right
+		{
+            nSurfaceLayers 16;
+	    	expansionRatio 1.2;
+	    	firstLayerThickness 5e-4;
+		}
+	left
+		{
+            nSurfaceLayers 16;
+	    	expansionRatio 1.2;
+	    	firstLayerThickness 5e-4;
+		}
+    }
+
+    // Advanced settings
+    featureAngle 190; //130; //60;
+    slipFeatureAngle 30;
+    nRelaxIter 10; //3;
+    nSmoothSurfaceNormals 1;
+    nSmoothNormals 10; //3;
+    nSmoothThickness 10;
+    maxFaceThicknessRatio 0.5;
+    maxThicknessToMedialRatio 0.3;
+    minMedialAxisAngle 130; //90;
+    minMedianAxisAngle 130; //90;
+    nBufferCellsNoExtrude 0;
+    nLayerIter 50;
+    nRelaxedIter 20; // no estaba; se agrego manualmente
+
+    meshShrinker displacementMotionSolver;
+    solver	displacementLaplacian;
+    displacementLaplacianCoeffs
+    {
+	diffusivity	quadratic inverseDistance 4(floor top left right);
+    }
+}
+
+// Generic mesh quality settings. At any undoable phase these determine
+// where to undo.
+meshQualityControls
+{
+    #include "meshQualityDict"
+
+    relaxed
+    {
+        maxNonOrtho 70;
+    }
+
+    // Advanced
+    nSmoothScale 4;
+    errorReduction 0.75;
+}
+
+
+// Advanced
+
+// Write flags
+writeFlags
+(
+    scalarLevels
+    layerSets
+    layerFields     // write volScalarField for layer coverage
+);
+
+
+// Merge tolerance. Is fraction of overall bounding box of initial mesh.
+// Note: the write tolerance needs to be higher than this.
+mergeTolerance 1e-6;
+
+
+// ************************************************************************* //

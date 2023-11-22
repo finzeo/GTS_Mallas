@@ -1,0 +1,2 @@
+cp: cannot stat 'log.snappyHexMesh': No such file or directory
+slurmstepd: error: *** JOB 8900 ON n-8 CANCELLED AT 2023-11-17T12:14:53 ***

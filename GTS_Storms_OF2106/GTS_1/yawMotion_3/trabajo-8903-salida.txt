@@ -1,0 +1,6 @@
+Cleaning case /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/yawMotion_3
+Running blockMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/yawMotion_3
+Running decomposePar on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/yawMotion_3
+Running snappyHexMesh (96 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/yawMotion_3 
+Running snappyHexMesh (96 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/yawMotion_3 
+Running snappyHexMesh (96 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/yawMotion_3 

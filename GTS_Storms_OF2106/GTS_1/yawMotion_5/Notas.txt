@@ -1,0 +1,3 @@
+Cambios
+	Basándose en la malla 23 general, se hace una versión de muchas menos celdas para probar la deformación por yaw motion
+

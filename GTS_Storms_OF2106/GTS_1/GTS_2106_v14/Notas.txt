@@ -1,0 +1,4 @@
+Cambios
+	Se sacó la zona relativamente pequeña de nivel 5 en la estela cercana (se vio en resultados que había cambios abruptos en la frontera de esta zona); tener en cuenta que pasaba de nivel 5 a nivel 3
+	Se creó una zona de nivel 4 en la estela, en una distancia igual a la longitud del vehículo. La malla quedó con bastantes menos celdas.
+	Se mantuvieron el resto de los parámetros (queda pendiente extender ligeramente el dominio quizás)

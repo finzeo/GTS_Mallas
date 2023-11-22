@@ -1,0 +1,7 @@
+Cleaning case /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_divergence
+Running blockMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_divergence
+Running decomposePar on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_divergence
+Running snappyHexMesh (32 processes) on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_divergence 
+Running reconstructParMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_divergence
+Running renumberMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_divergence
+Running checkMesh on /home/finzeo/Tesis/Mallas/GTS_Storms_OF2106/GTS_1/empty_tunnel_divergence

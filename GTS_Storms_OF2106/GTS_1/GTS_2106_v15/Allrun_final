@@ -1,0 +1,31 @@
+#!/bin/sh
+cd "${0%/*}" || exit                                # Run from this directory
+. ${WM_PROJECT_DIR:?}/bin/tools/RunFunctions        # Tutorial run functions
+#------------------------------------------------------------------------------
+
+#foamCleanTutorials
+##runApplication surfaceFeatureExtract # Using .eMesh file generated previously
+#runApplication blockMesh
+#runApplication decomposePar -decomposeParDict system/decomposeParDict.32
+#runParallel -decomposeParDict system/decomposeParDict.32 snappyHexMesh -overwrite -dict system/snappyHexMeshDict
+#cp log.snappyHexMesh log.snappyHexMesh1
+#rm -rf ./log.snappyHexMesh
+#runParallel -decomposeParDict system/decomposeParDict.128 snappyHexMesh -dict system/snappyHexMeshDict3
+#mv log.snappyHexMesh log.snappyHexMesh3
+
+##- For non-parallel running
+##cp -r 0.orig 0 > /dev/null 2>&1
+
+##- For parallel running
+ls -d processor* | xargs -I {} rm -rf ./{}/0
+##ls -d processor* | xargs -I {} cp -r 0.orig ./{}/0
+
+##runParallel patchSummary
+##runParallel potentialFoam
+##runParallel $(getApplication)
+
+runApplication reconstructParMesh -constant -latestTime
+runApplication renumberMesh -latestTime
+runApplication -decomposeParDict system/decomposeParDict.96 checkMesh
+
+#------------------------------------------------------------------------------

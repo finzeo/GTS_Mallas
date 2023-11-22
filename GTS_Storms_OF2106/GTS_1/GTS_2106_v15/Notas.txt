@@ -1,0 +1,3 @@
+Cambios
+	Se reestablece tener nivel 5 (en la anterior se había sacado) y en una extensión algo mayor (x~1 m) en la estela. Se deja lo hecho en nivel 4  (así no pasa directo de nivel 5 a nivel 3)
+	Se mantuvieron el resto de los parámetros (queda pendiente extender ligeramente el dominio quizás)

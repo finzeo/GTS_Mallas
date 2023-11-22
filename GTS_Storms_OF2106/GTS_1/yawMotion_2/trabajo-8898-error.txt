@@ -1,0 +1,1 @@
+slurmstepd: error: *** JOB 8898 ON n-11 CANCELLED AT 2023-11-17T12:10:36 ***

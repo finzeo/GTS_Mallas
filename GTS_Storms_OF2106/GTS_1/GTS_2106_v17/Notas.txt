@@ -1,0 +1,3 @@
+Cambios
+	Se mantiene el seteo de la malla 16 (caracterizada por crearse una única zona de nivel 4 en la estela, en una distancia igual a la longitud del vehículo, con extensión del dominio en 32.5w aprox)
+	Se agrega, en las etapas de esnapado y encapado, todos los features del modelo (antes solo estaban los del borde trasero y delantero); esto para representar mejor la forma del GTS (se veía antes que no respetaba bien la forma sobre todo en la unión de los struts con el resto del GTS)
